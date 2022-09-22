@@ -1,0 +1,45 @@
+@media (max-width: 768px){
+    .showcase{
+        padding: 40px;
+
+        header{
+            padding: 40px;
+        }
+    }
+
+    .text{
+        h2{
+            font-size: 3em;
+        }
+
+        h3{
+            font-size: 2em;
+        }
+
+    }
+
+    .showcase.active{
+        right: 200px;
+    }
+
+    .menu{
+        width: 200px;
+
+        a{
+            font-size: 1.4em;
+        }
+    }
+
+    section.about{
+        padding: 40px;
+
+        .meetTheTeam{
+            flex-direction: column;
+
+        }
+
+        .teamImage{
+            margin-bottom: 40px;
+        }
+    }
+}
