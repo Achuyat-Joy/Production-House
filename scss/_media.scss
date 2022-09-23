@@ -35,11 +35,28 @@
 
         .meetTheTeam{
             flex-direction: column;
-
         }
 
         .teamImage{
             margin-bottom: 40px;
         }
+    }
+
+    .prev, .next{
+        top: 100px;
+        right: 40px;
+    }
+
+    .numberText{
+        top: 105px;
+        left: 40px;
+    }
+
+    .meet{
+        display: none;
+    }
+
+    .meet2{
+        display: block;
     }
 }
