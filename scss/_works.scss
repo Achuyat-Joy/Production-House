@@ -61,16 +61,18 @@ section.works{
             img{
                 height: 100%;
                 width: 100%;
+                transition: 0.5s;
             }
         }
     
         .item:hover .action{
             opacity: 1;
+            transition: 0.5s ease-in-out;
         }
 
         .item:hover img{
             transform: scale(0.8);
-            transition: 0.4s;
+            transition: 0.5s ease-in-out;
         }
     }
 }

@@ -1,4 +1,5 @@
 @media (max-width: 768px){
+
     .showcase{
         padding: 40px;
 
@@ -33,23 +34,16 @@
     section.about{
         padding: 40px;
 
-        .meetTheTeam{
-            flex-direction: column;
-        }
-
-        .teamImage{
-            margin-bottom: 40px;
-        }
     }
 
     .prev, .next{
-        top: 100px;
-        right: 40px;
+        top: -40px;
+        right: 0px;
     }
 
     .numberText{
-        top: 105px;
-        left: 40px;
+        top: -40px;
+        left: 20px;
     }
 
     .meet{
@@ -57,12 +51,30 @@
     }
 
     .meet2{
-        display: block;
+        display: flex;
+        position: absolute;
+        margin-left: 4%;
     }
 
     section.works{
         padding: 40px;
+        top: 180vh;
     }
 
+    footer .contact-info{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        top: 180vh;
+
+        .copyright{
+            left: 38%;
+        }
+
+        .upbutton{
+            top: 40%;
+            right: 40px;
+        }
+    }
 
 }

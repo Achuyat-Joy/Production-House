@@ -8,6 +8,7 @@ section.about{
     text-transform: uppercase;
 
     .meetTheTeam{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -80,7 +81,7 @@ section.about{
     color: #111;
     font-size: 1em;
     position: absolute;
-    top: 140px;
+    top: -40px;
 }
 
 .meet2{
