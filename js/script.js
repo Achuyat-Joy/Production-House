@@ -11,16 +11,14 @@ toggle.addEventListener('click', () => {
 
 //scroll vanishing menu
 
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.querySelector(".showcase.active").style.right = "0";
-//   } 
-//   else {
-//     document.querySelector(".showcase.active").style.right = "300px";
-//   }
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toggle.classList.remove('active');
+    showcase.classList.remove('active');
+  } 
+}
 
 
 //slide for team member
@@ -53,7 +51,8 @@ function showSlides(n) {
             slides[i].style.display = "none";  
         }
         slides[slideIndex-1].style.display = "flex";  
-    }else if(w < 569){
+    }
+    else if(w < 569){
         let i;
         let slides = document.getElementsByClassName("mobSlides");
         if (n > slides.length){
