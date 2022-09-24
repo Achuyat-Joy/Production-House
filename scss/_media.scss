@@ -1,4 +1,8 @@
 @media (max-width: 768px){
+    
+    body{
+        overflow-x: hidden;
+    }
 
     .showcase{
         padding: 40px;
@@ -55,10 +59,6 @@
         position: absolute;
         // margin-left: 4%;
         flex-direction: column;
-    }
-
-    .mobSlides{
-        margin-left: 10px;
     }
 
     section.works{
