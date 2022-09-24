@@ -8,10 +8,10 @@ section.about{
     text-transform: uppercase;
 
     .meetTheTeam{
-        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         gap: 40px;
         margin-top: 10px;
     }
@@ -23,9 +23,12 @@ section.about{
     }
 
     .teamImage{
+        position: relative;
+        height: 480px;
+        width: 370px;
+        
         img{
-            height: 480px;
-            width: 370px;
+            width: 100%;
         }
 
         h4,p{
@@ -43,6 +46,40 @@ section.about{
         }
     }
 
+    .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        top: 140px;
+        right: 120px;
+        transition: 0.6s ease;
+    
+        img{
+            width: 30px;
+        }
+    }
+    
+    .prev{
+        padding-right: 50px;
+    }
+    
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+      
+    @keyframes fade {
+        from {opacity: .8} 
+        to {opacity: 1}
+    }
+    
+    .numberText{
+        color: #111;
+        font-size: 1em;
+        position: absolute;
+        top: 140px;
+        left: 120px;
+    }
+
 }
 
 .slides {
@@ -53,36 +90,6 @@ section.about{
     display: none
 }
 
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 120px;
-    right: 120px;
-    transform: scale(3);
-    transition: 0.6s ease;
-    user-select: none;
-}
-
-.prev{
-    padding-right: 50px;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .8} 
-    to {opacity: 1}
-}
-
-.numberText{
-    color: #111;
-    font-size: 1em;
-    position: absolute;
-    top: -40px;
-}
 
 .meet2{
     display: none;
