@@ -54,6 +54,10 @@
         display: flex;
         position: absolute;
         margin-left: 4%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
     }
 
     section.works{
