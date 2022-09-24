@@ -1,9 +1,5 @@
 @media (max-width: 768px){
 
-    body{
-        overflow-x: hidden;
-    }
-
     .showcase{
         padding: 40px;
 
@@ -57,11 +53,12 @@
     .meet2{
         display: flex;
         position: absolute;
-        margin-left: 4%;
+        // margin-left: 4%;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+    }
+
+    .mobSlides{
+        margin-left: 10px;
     }
 
     section.works{
